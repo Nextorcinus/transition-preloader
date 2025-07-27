@@ -21,11 +21,11 @@ $('.preloader-ring').each(function () {
 
 // transition 2
 $(document).ready(function () {
-  let time = 1
+  let time = 0.5
 
   const tl = gsap.timeline({ delay: time / 3 })
 
-  tl.to('#logo_preload', { duration: 0.3, opacity: 0 })
+  tl.to('#logo_preload', { duration: 0.1, opacity: 0 })
     .to('#bars', { duration: 0.3, opacity: 1 }, '-=0.2')
     .to('#bar1', { duration: 0.3, width: 0 }, '-=0.1')
     .to('#bar2', { duration: 0.3, width: 0 }, '-=0.1')
