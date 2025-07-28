@@ -46,14 +46,14 @@ $(document).ready(function () {
 const timeline = gsap.timeline()
 
 timeline.to('.animate', {
-  delay: 3,
+  delay: 1,
   duration: 0.5,
   opacity: 0,
 })
 
 timeline.to('.animation', {
   delay: 1,
-  duration: 1,
+  duration: 0.8,
   y: '100%',
   ease: 'power4.out',
 })
@@ -62,9 +62,9 @@ timeline.to('.animation', {
   zIndex: -1,
 })
 
-timeline.from('.container h1', {
-  delay: 0.2,
-  duration: 0.8,
+timeline.from('.container-transition3 h1', {
+  
+  duration: 0.5,
 
   y: 100,
   opacity: 0,
